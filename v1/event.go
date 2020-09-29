@@ -313,3 +313,7 @@ type DeleteResponse struct {
 	ID       string `json:"id"`
 	LiveMode bool   `json:"livemode"`
 }
+
+func (e *EventResponse) Data() json.rawMessage {
+	return e.data
+}
