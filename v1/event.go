@@ -314,6 +314,6 @@ type DeleteResponse struct {
 	LiveMode bool   `json:"livemode"`
 }
 
-func (e *EventResponse) Data() json.rawMessage {
+func (e *EventResponse) Data() json.RawMessage {
 	return e.data
 }
